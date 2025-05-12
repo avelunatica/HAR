@@ -1,0 +1,37 @@
+      # --camera-url http://192.168.1.71:8080/video
+      # --camera-url http://192.168.86.131:8080/video
+stages:
+  inferencia_stream:
+    cmd:  export PYTHONPATH=$(pwd) && python scripts/main.py 
+      --config configs/K400/tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb.py 
+      --checkpoint configs/K400/tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb.pth 
+      --labels configs/K400/label_map_k400.txt 
+      --device cpu 
+      --camera-url http://192.168.86.15:5000/video_feed
+      --post-url http://192.168.86.153:3000/actions 
+      --window-size 10 
+      --threshold 0.7 
+      --id_user 71 
+      --resize-width 600
+    deps:
+      - scripts/main.py
+      - core/stream_action_recognizer.py
+      - core/inference_model.py
+      - core/action_validator.py
+      - configs/K400/tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb.py
+      - configs/K400/tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb.pth
+      - configs/K400/label_map_k400.txt
+    outs:
+      - data/acciones.csv
+
+  generar_informe_metricas:
+    cmd: export PYTHONPATH=$(pwd) &&  python scripts/metrics_report.py \
+      --csv-path data/acciones.csv \
+      --output-dir results/metrics
+    deps:
+      - scripts/metrics_report.py
+      - data/acciones.csv
+    outs:
+      - results/metrics/confusion_matrix.png
+      - results/metrics/f1score_por_clase.png
+      - results/metrics/resumo_f1score_por_clase.csv
