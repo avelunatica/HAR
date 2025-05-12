@@ -1,0 +1,908 @@
+:root {
+    --primary-color: #f48fb1;
+    /* rosa fuerte */
+    --primary-hover-color: #ec407a;
+    /* rosa vibrante */
+    --secondary-color: #AD1457;
+    /* borgoña profundo para acentos */
+    --background-color: #fff1e6;
+    /* fondo cálido pastel */
+    --text-color: #333333;
+    /* texto principal */
+    --heading-color: #f06292;
+    /* rosa intenso para header */
+    --success-color: #c8e6c9;
+    --success-text-color: #2e7d32;
+    --error-color: #ffcdd2;
+    --error-text-color: #b71c1c;
+    --button-text-color: #ffffff;
+    /* blanco para texto de botones */
+    --button-active-color: #f48fb1;
+
+    --logo-font: "Nunito", sans-serif;
+    --primary-font-family: "Nunito", sans-serif;
+    --secondary-font-family: "Nunito", sans-serif;
+    --heading-font-family: "Nunito", sans-serif;
+    --button-font-family: "Nunito", sans-serif;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-sm: 0.875rem;
+    --font-weight-bold: 700;
+    --line-height: 1.6;
+    --letter-spacing: 0.05em;
+    --heading-line-height: 1.3;
+    --heading-letter-spacing: 0.1em;
+}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: var(--primary-font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    letter-spacing: var(--letter-spacing);
+    background-image: url('/static/img/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--background-color);
+}
+
+small {
+    font-size: var(--font-size-sm);
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--heading-color);
+    height: auto;
+    /* Antes: 70px */
+    min-height: 80px;
+    /* Más altura */
+    padding: 0.5rem 1.5rem;
+    /* Espacio arriba y abajo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0.2em 0.8em rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    /* Esto es clave */
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-img {
+    height: 50px;
+    /* que no se pase de la barra */
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    font-size: 1rem;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.navbar-item:hover,
+.navbar-item.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Botón hamburguesa */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+    padding: 0.5rem 0.25rem;
+    /* Añade margen vertical */
+    align-items: center;
+    /* Centra las líneas */
+    justify-content: center;
+    height: 40px;
+    /* Le da un tamaño usable */
+}
+
+
+.navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Ajuste para asegurar que el dropdown no se oculte detrás de otros elementos */
+.navbar-menu-dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: var(--heading-color);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 9999;
+    /* Asegura que esté encima */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu-dropdown a {
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-menu-dropdown a:hover {
+    background-color: var(--primary-color);
+}
+
+/* Consistent top margin for content across pages */
+.content {
+    margin-top: 10vh;
+    /* Adjust for navbar height + extra breathing space */
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font-family);
+    line-height: var(--heading-line-height);
+    letter-spacing: var(--heading-letter-spacing);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    scroll-margin-top: 100px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 8vw;
+    height: 0.4vh;
+    background: var(--primary-color);
+    margin: 1vh auto 0;
+    border-radius: 0.2vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 6vw;
+    height: 0.3vh;
+    background: var(--primary-color);
+    margin: 0.8vh auto 0;
+    border-radius: 0.2vh;
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+    color: var(--secondary-color);
+    margin: 3vh auto;
+    padding: 0 2vw;
+    text-align: justify;
+    max-width: 80%;
+    /* Consistent with paragraphs */
+}
+
+/* Paragraphs */
+p {
+    font-family: var(--primary-font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    margin: 1.5vh auto;
+    max-width: 80%;
+    padding: 0 2vw;
+    text-align: justify;
+}
+
+/* Links inside paragraphs */
+p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    transition: color 0.3s ease-in-out;
+}
+
+p a:hover {
+    color: var(--primary-hover-color);
+}
+
+p.text-center {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 1.875rem;
+    /* 30px a rem */
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    margin: 0 0.625rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination span {
+    font-size: 1.125rem;
+    color: var(--secondary-color);
+}
+
+/* Sort options styles */
+.sort-options {
+    text-align: center;
+    margin: 1.25rem 0;
+    /* 20px a rem */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+    /* 18px a rem */
+    margin: 0 0.625rem;
+    /* 10px a rem */
+    transition: color 0.3s ease;
+}
+
+.sort-options a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    /* 18px a rem */
+    margin: 0 0.625rem;
+    /* 10px a rem */
+    transition: color 0.3s ease;
+}
+
+.sort-options a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    /* 18px a rem */
+    margin: 0 0.625rem;
+    /* 10px a rem */
+    transition: color 0.3s ease;
+}
+
+.sort-options a:hover {
+    color: var(--primary-hover-color);
+}
+
+.sort-options a.active {
+    font-weight: bold;
+    color: var(--primary-hover-color);
+}
+
+/* Form styles */
+form {
+    background: var(--button-text-color);
+    max-width: 45rem;
+    margin: 1.875rem auto;
+    /* 30px a rem */
+    padding: 1.875rem;
+    /* 30px a rem */
+    border-radius: 1rem;
+    /* 10px a rem */
+    border: 0.15rem solid var(--secondary-color);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    /* 20px a rem */
+    font-size: 1.75rem;
+    /* 28px a rem */
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    /* 20px a rem */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    /* 16px a rem */
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    /* 8px a rem */
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    /* 12px a rem */
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    /* 8px a rem */
+    font-size: 0.875rem;
+    /* 14px a rem */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0.5rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.wide-form {
+    max-width: 90vw;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.warning-card {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--error-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.warning-card button {
+    background: var(--text-color);
+    color: var(--button-active-color);
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.warning-card button:hover {
+    background: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Estilo del input de archivo */
+input[type="file"] {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: 0.15rem dashed var(--primary-color);
+    border-radius: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Cambio de estilo cuando el input de archivo está enfocado */
+input[type="file"]:focus {
+    border-color: var(--primary-hover-color);
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.6);
+    /* Efecto sutil de sombra */
+}
+
+/* Hover sobre el input de archivo */
+input[type="file"]:hover {
+    border-color: var(--primary-hover-color);
+    background-color: rgba(255, 99, 71, 0.1);
+}
+
+/* Botón de carga de imagen */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover sobre el botón de carga */
+button[type="submit"]:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* Efecto de sombra en el botón de carga */
+button[type="submit"]:active {
+    background-color: var(--primary-hover-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de imágenes previsualizadas */
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.image-preview {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover sobre las imágenes previsualizadas */
+.image-preview:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el texto de la sección */
+.upload-section-text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: var(--button-font-family);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+/* Cambiar color del botón cuando el ratón pasa por encima */
+button:hover {
+    background-color: #f31b1b;
+}
+
+/* Estilo para los botones */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--button-text-color);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    padding: 1rem;
+    border-radius: 1rem;
+    /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: var(--primary-hover-color);
+}
+
+button[type="submit"]:active {
+    background: var(--button-active-color);
+}
+
+.flash-message {
+    text-align: center;
+    padding: 0.625rem;
+    /* 10px a rem */
+    margin: 0.625rem 0;
+    /* 10px a rem */
+    border-radius: 0.5rem;
+    /* 8px a rem */
+    font-weight: bold;
+}
+
+.flash-message.success {
+    background: var(--success-color);
+    color: var(--success-text-color);
+}
+
+.flash-message.error {
+    background: var(--error-color);
+    color: var(--error-text-color);
+}
+
+/* Estilo para el botón de agregar */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    /* 8px 12px a rem */
+    font-size: 1rem;
+    /* 16px a rem */
+}
+
+.btn-primary i {
+    margin-right: 0.3125rem;
+    /* 5px a rem */
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.indie-flower-regular {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-font {
+    font-family: var(--logo-font);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Estilo para las imágenes de los detalles de las plumas */
+.pen-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* 15px a rem */
+    justify-content: center;
+    margin: 1.25rem 0;
+    /* 20px a rem */
+}
+
+.pen-images img {
+    max-width: 15.625rem;
+    /* 250px a rem */
+    border-radius: 0.75rem;
+    /* 12px a rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.transition-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Efectos sobre las imágenes con la clase .zoom-image */
+.zoom-image {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.zoom-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del modal */
+.modal {
+    display: none;
+    /* Por defecto oculto */
+    position: fixed;
+    z-index: 1;
+    padding-top: 3.75rem;
+    /* 60px a rem */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Imagen dentro del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 40%;
+}
+
+/* Texto debajo de la imagen */
+#caption {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.25rem;
+    /* 20px a rem */
+    padding: 0.625rem;
+    /* 10px a rem */
+}
+
+/* El botón de cierre (X) */
+.close {
+    position: absolute;
+    top: 4rem;
+    /* 40px a rem */
+    right: 1.25rem;
+    /* 20px a rem */
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    /* 40px a rem */
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 48rem) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.625rem;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        /* Espacio mayor entre los ítems */
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 12vh
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu-dropdown.active {
+        display: flex;
+        z-index: 1050;
+    }
+
+    .navbar-item {
+        font-size: 1.1rem;
+        /* Aumenta el tamaño de los ítems */
+    }
+
+    .navbar-menu-dropdown {
+        padding: 1rem;
+    }
+
+    .zoom-image {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 1.25rem;
+        /* 20px a rem */
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 24vh;
+        /* Ajusta según el alto real de tu navbar en móvil */
+    }
+
+    h1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2.5rem;
+        /* Tamaño más manejable en móviles */
+    }
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100vw;
+    touch-action: manipulation;
+}
+
+img,
+h1,
+h2,
+p,
+div,
+section {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 16vh;
+        padding: 0 5rem; /* menos margen que los 10rem anteriores */
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    p, h3 {
+        font-size: 1.1rem;
+    }
+
+    .tabela-f1 {
+        font-size: 1rem; /* tabla más legible */
+    }
+
+    .tabela-f1 caption {
+        font-size: 1.25rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+    
+}
+
+  .tabla-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+  
+  .tabela-f1 {
+    font-family: var(--primary-font-family);
+    font-size: 1.2rem; /* letra máis grande */
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .tabela-f1 caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .tabela-f1 thead {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .tabela-f1 th,
+  .tabela-f1 td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabela-f1 tbody tr:hover {
+    background-color: rgba(244, 143, 177, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .tabla-container {
+      display: block;
+      margin: 2rem auto;
+      padding: 0 2vw;
+      overflow-x: auto; /* <-- ¡clave! */
+    }
+  
+    .tabela-f1 {
+      width: 100%;
+      max-width: 100%; /* que no se desborde */
+      font-size: 1rem;
+      border-spacing: 0;
+      table-layout: fixed; /* ayuda a ajustar el contenido */
+      word-wrap: break-word; /* permite romper palabras largas */
+    }
+  
+    .tabela-f1 th,
+    .tabela-f1 td {
+      padding: 0.75rem;
+      word-break: break-word;
+    }
+  
+    .tabela-f1 caption {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+  

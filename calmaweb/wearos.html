@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalmaTEA - Wear OS</title>
+  <link rel="icon" type="image/png" href="static/favicon.png" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script src="static/js/script.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand">
+        <img src="static/img/logo_CalmaTEA.png" alt="Logo CalmaTEA" class="logo-img" />
+      </a>
+      <div class="navbar-menu">
+        <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+        <a href="har.html" class="navbar-item">HAR</a>
+        <a href="web.html" class="navbar-item">Web de administración</a>
+        <a href="app.html" class="navbar-item">App CalmaTEA</a>
+        <a href="wearos.html" class="navbar-item">Wear OS</a>
+      </div>
+    </div>
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="navbar-menu-dropdown">
+      <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+      <a href="har.html" class="navbar-item">HAR</a>
+      <a href="web.html" class="navbar-item">Web de administración</a>
+      <a href="app.html" class="navbar-item">App CalmaTEA</a>
+      <a href="wearos.html" class="navbar-item">Wear OS</a>
+    </div>
+  </nav>
+
+  <div class="content" style="text-align: center;">
+    <h1>App Wear OS CalmaTEA</h1>
+
+    <h3>Introdución</h3>
+    <p>
+      CalmaTEA é unha aplicación deseñada para persoas con Trastorno do Espectro Autista (TEA) e os seus titores.
+      Esta versión para Wear OS é reducida, orientada a pacientes, permitindo recibir alarmas programadas e lanzar
+      notificacións visuais e sonoras dun modo sinxelo dende o reloxo.
+    </p>
+    <p>
+      A aplicación sincroniza alarmas desde un servidor remoto e mostra unha pantalla adaptada coa acción correspondente.
+    </p>
+
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <video controls autoplay muted loop style="width: 60%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <source src="static/watch.mp4" type="video/mp4">
+        O teu navegador non soporta o vídeo en formato MP4.
+      </video>
+      <figcaption style="margin-top: 0.5rem;">Mostra do funcionamento da app no SmartWatch</figcaption>
+    </figure>
+    <h3>Estrutura da aplicación</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li><strong>AndroidManifest</strong>: permisos como notificacións, almacenamento e alarmas.</li>
+      <li><strong>AlarmReceiver</strong>: xestiona o son e abre a pantalla de alarma.</li>
+      <li><strong>AlarmAlertActivity</strong>: mostra a acción cando salta a alarma.</li>
+      <li><strong>AlarmSyncHelper</strong>: sincroniza alarmas co servidor.</li>
+      <li><strong>ApiClient</strong>: realiza conexións HTTP co backend.</li>
+      <li><strong>PermissionHelper</strong>: solicita permisos críticos.</li>
+    </ul>
+
+    <h3>Pantallas da App</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li><strong>LoginScreen</strong>: pantalla de inicio de sesión.</li>
+      <div style="text-align: center;">
+        <figure>
+          <img src="static/img/wearos/loggin_screenwearos.png" alt="Interfaz Wear OS: inicio, menú e alarmas" style="width: 300px; height: auto;" />
+          <figcaption>Pantalla de inicio de sesión</figcaption>
+        </figure>
+      </div>
+      <li><strong>HomeScreen</strong>: menú principal con opcións básicas.</li>
+      <div style="text-align: center;">
+        <figure>
+          <img src="static/img/wearos/home_screenwearos.png" alt="Interfaz Wear OS: inicio, menú e alarmas" style="width: 300px; height: auto;" />
+          <figcaption>Menú principal con opcións básicas</figcaption>
+        </figure>
+      </div>
+      <li><strong>AlarmScreen</strong>: lista de alarmas personalizadas.</li>
+      <div style="text-align: center;">
+        <figure>
+          <img src="static/img/wearos/alarm_screenwearos.png" alt="Interfaz Wear OS: inicio, menú e alarmas" style="width: 300px; height: auto;" />
+          <figcaption>Lista de alarmas</figcaption>
+        </figure>
+      </div>
+      <li><strong>AlarmDetailScreen</strong>: mostra unha imaxe relacionada coa acción da alarma.</li>
+      <div style="text-align: center;">
+        <figure>
+          <img src="static/img/wearos/alarmdetails_screenwearos.png" alt="Interfaz Wear OS: inicio, menú e alarmas" style="width: 300px; height: auto;" />
+          <figcaption>Detalles da alarma</figcaption>
+        </figure>
+      </div>
+      <li><strong>AlarmAlertActivity</strong>: pantalla especial cando salta unha alarma, mesmo co reloxo bloqueado.</li>
+      <div style="text-align: center;">
+        <figure>
+          <img src="static/img/wearos/notification_screenwearos.png" alt="Interfaz Wear OS: inicio, menú e alarmas" style="width: 300px; height: auto;" />
+          <figcaption>Notificación</figcaption>
+        </figure>
+      </div>
+    </ul>
+
+    <h3>Funcionalidades principais</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li>Recepción de alarmas visuais e sonoras programadas.</li>
+      <li>Sincronización automática co servidor remoto.</li>
+      <li>Funciona con ou sen a app aberta no reloxo.</li>
+      <li>Amosa unha imaxe adaptada para facilitar a acción ao usuario.</li>
+      <li>Activación de son e pantalla mesmo en segundo plano ou dispositivo bloqueado.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CalmaTEA</p>
+  </footer>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+</body>
+</html>

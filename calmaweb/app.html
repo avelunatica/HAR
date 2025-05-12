@@ -1,0 +1,172 @@
+<html lang="gl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalmaTEA - App</title>
+  <link rel="icon" type="image/png" href="static/favicon.png" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script src="static/js/script.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand">
+        <img src="static/img/logo_CalmaTEA.png" alt="Logo CalmaTEA" class="logo-img" />
+      </a>
+      <div class="navbar-menu">
+        <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+        <a href="har.html" class="navbar-item">HAR</a>
+        <a href="web.html" class="navbar-item">Web de administración</a>
+        <a href="app.html" class="navbar-item">App CalmaTEA</a>
+        <a href="wearos.html" class="navbar-item">Wear OS</a>
+      </div>
+    </div>
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="navbar-menu-dropdown">
+      <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+      <a href="har.html" class="navbar-item">HAR</a>
+      <a href="web.html" class="navbar-item">Web de administración</a>
+      <a href="app.html" class="navbar-item">App CalmaTEA</a>
+      <a href="wearos.html" class="navbar-item">Wear OS</a>
+    </div>
+  </nav>
+
+  <div class="content" style="text-align: center;">
+    <h1>App CalmaTEA</h1>
+
+    <h3>Introdución</h3>
+    <p style="text-align: center;">CalmaTEA é unha aplicación deseñada para axudar ás persoas con Trastorno do Espectro Autista (TEA), aos seus titores e administradores. A aplicación facilita a xestión de alarmas personalizadas, permite a configuración de pictogramas e sons e ofrece funcións para xestionar usuarios, alarmas e relacións entre pacientes e titores.</p>
+
+
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <video controls autoplay muted loop style="width: 60%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <source src="static/app.mp4" type="video/mp4">
+        O teu navegador non soporta o vídeo en formato MP4.
+      </video>
+      <figcaption style="margin-top: 0.5rem;">Mostra de funcionamento da app móbil</figcaption>
+    </figure>
+
+    <h3>Estrutura da aplicación</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li><strong>AndroidManifest</strong>: Define os permisos necesarios para a aplicación, como notificacións, acceso ao almacenamento e alarmas.</li>
+      <li><strong>AlarmBootReceiver</strong>: Receptor que garante que as alarmas se reinicien despois de reiniciar o dispositivo.</li>
+      <li><strong>AlarmReprogramService</strong>: Servizo que reprograma as alarmas se non se interactúa con elas a tempo.</li>
+      <li><strong>PushNotificationManager</strong>: Xestor de notificacións local para alarmas, que permite a reprogramación e o aprazamento de alarmas.</li>
+      <li><strong>AlarmReprogram</strong>: Funcións que permiten reprogramar automaticamente as alarmas cando non se validan a tempo.</li>
+    </ul>
+
+    <h3>Funcionalidades</h3>
+    <ul style="display: inline-block; text-align: left;">
+      <li><strong>Reprogramación automática de alarmas</strong>: AlarmBootReceiver e AlarmReprogramService garanten que as alarmas se reprogramen correctamente despois de reiniciar o dispositivo ou se non se validan a tempo.</li>
+      <li><strong>Notificacións push</strong>: PushNotificationManager xestiona as alarmas mediante notificacións push, o que permite pospoñer obter información e reprogramar as alarmas directamente dende as notificacións.</li>
+      <li><strong>Personalización de alarmas</strong>: Os titores poden personalizar tanto os pictogramas, como a prioridade, como os sons asociados ás alarmas, mellorando a accesibilidade e a experiencia do usuario.</li>
+      <li><strong> Estatísticas e tendencias</strong>: Os titores poden ver as estatísticas de alarmas, incluídos os datos sobre alarmas validadas, aprazadas e non validadas, presentadas a través de gráficos dinámicos.</li>
+    </ul>
+
+    <h4>Benvida</h4>
+    <p style="text-align: center;">Pantalla inicial da aplicación.</p>
+    <img src="static/img/app/bienvenida.png" alt="Benvida" style="width: 300px; height: auto;" />
+
+    <h4>Selección de Rol</h4>
+    <p style="text-align: center;">Os usuarios seleccionan o seu rol (Administrador, Titor ou Paciente). Dependendo do rol escollido, a aplicación redirixe
+      á pantalla de inicio de sesión correspondente.(Cómpre sinalar que a opción de Administrador
+      non estará funcional na aplicación do usuario)..</p>
+    <img src="static/img/app/seleccion-rol.png" alt="Selección de rol" style="width: 300px; height: auto;" />
+
+    <h4>Inicio de Sesión</h4>
+    <p style="text-align: center;">Autenticación para entrar na app.</p>
+    <img src="static/img/app/login.png" alt="Login" style="width: 300px; height: auto;" />
+
+    <h4>Panel do Administrador</h4>
+    <p style="text-align: center;">Os administradores
+      poden xestionar pacientes, titores e as relacións entre eles. As opcións dispoñibles inclúen:
+      <ul style="display: inline-block; text-align: left;">
+        <li><strong>Engadir paciente</strong></li>
+        <li><strong>Engadir titor</strong></li>
+        <li><strong>Vincular titor ↔ Paciente</strong></li>
+        <li><strong>Eliminar paciente</strong></li>
+        <li><strong>Eliminar titor</strong></li>
+        <li><strong>Eliminar titor ↔ Relación do paciente</strong></li>
+      </ul>
+    </p>
+    <img src="static/img/app/admin-menu.png" alt="Admin menu" style="width: 300px; height: auto;" />
+
+    <h4>Alarmas do Paciente</h4>
+    <p style="text-align: center;">Os usuarios pacientes poden ver as súas alarmas programadas. As alarmas xestiónanse mediante notificacións push.</p>
+    <img src="static/img/app/patient-alarms.png" alt="Patient Alarms" style="width: 300px; height: auto;" />
+
+    <h4>Notificación ao Paciente</h4>
+    <p style="text-align: center;">Pantalla de acción cando salta a alarma.</p>
+    <img src="static/img/app/notificacion.png" alt="Notificación Paciente" style="width: 300px; height: auto;" />
+
+    <h4>Menú do Titor</h4>
+    <p style="text-align: center;">Os titores poden acceder a funcións como aconfiguración de alarmas, a visualización de estatísticas de pacientes e a personalización
+ de alarmas.</p>
+    <img src="static/img/app/tutor-menu.png" alt="Tutor menu" style="width: 300px; height: auto;" />
+
+    <h4>Configuración de Alarmas</h4>
+    <p style="text-align: center;">Permite aos titores ver e xestionar as alarmas dos pacientes, así como editalas ou eliminalas</p>
+    <img src="static/img/app/alarms-config.png" alt="Alarm Config" style="width: 300px; height: auto;" />
+
+    <h4>Engadir Alarma</h4>
+    <p style="text-align: center;">Os titores poden engadir novas
+      alarmas aos pacientes. Esta pantalla permítelles seleccionar a acción (por exemplo, ”Beber
+      algo”), definir a prioridade da alarma e definir a data usando o selector de calendario e hora
+     para determinar cando debe soar. Ademais, pódese seleccionar un paciente entre os asociados
+      co titor.</p>
+    <img src="static/img/app/add-alarm.png" alt="Add Alarm" style="width: 300px; height: auto;" />
+
+    <h4>Estatísticas</h4>
+    <p style="text-align: center;">Os titores poden ver estatísticas sobre as alarmas dos pacientes, visualizar gráficos e porcentaxes de validación de accións..</p>
+    <img src="static/img/app/estadisticas1.png" alt="Estadísticas 1" style="width: 300px; height: auto; margin-right: 20px; margin-bottom: 20px;" />
+    <img src="static/img/app/estadisticas2.png" alt="Estadísticas 2" style="width: 300px; height: auto; margin-right: 20px; margin-bottom: 20px;" />
+    <img src="static/img/app/estadisticas3.png" alt="Estadísticas 3" style="width: 300px; height: auto; margin-right: 20px; margin-bottom: 20px;" />
+    <img src="static/img/app/estadisticas4.png" alt="Estadísticas 4" style="width: 300px; height: auto; margin-right: 20px; margin-bottom: 20px;" />
+
+    <h4>Personalización</h4>
+    <p style="text-align: center;"> Os titores poden personalizar as alarmas modificando pictogramas, sons e prioridade de acción.</p>
+    <img src="static/img/app/personalizacion.png" alt="Personalización" style="width: 300px; height: auto;" />
+
+    <h4>Pictogramas</h4>
+    <p style="text-align: center;">Esta pantalla permite aos usuarios personalizar os pictogramas asociados ás alarmas. Os usuarios
+       poden escoller entre pictogramas predeterminados ou cargar imaxes personalizadas para cada
+       acción relacionada coa alarma.</p>
+    <img src="static/img/app/pictogramas.png" alt="Pictogramas" style="width: 300px; height: auto;" />
+
+    <h4>Personalización de Son</h4>
+    <p style="text-align: center;">Os usuarios poden
+      personalizar o son da alarma subindo ficheiros de son en formato MP3, WAV ou OGG. Os
+      sons gárdanse para cada paciente seleccionado.</p>
+    <img src="static/img/app/musica.png" alt="Música" style="width: 300px; height: auto;" />
+
+    <h4>Prioridade das Accións</h4>
+    <p style="text-align: center;">Esta pantalla permíte xestionar as prioridades das accións relacionadas coas alarmas dos pacientes. Os ti
+      tores poden asignar prioridades (alta, media ou baixa) ás accións e axustar estas prioridades
+       mediante os botóns de incremento e decremento.</p>
+    <img src="static/img/app/prioridades.png" alt="Prioridades" style="width: 300px; height: auto;" />
+
+    <h4>Modificar Contas</h4>
+    <p style="text-align: center;">Permite editar nome de usuario ou contrasinal do tutor e dos pacentes asignado.</p>
+    <img src="static/img/app/modificar-cuentas.png" alt="Modificar Contas" style="width: 300px; height: auto;" />
+
+    <h4>Notificación ao Titor</h4>
+    <p style="text-align: center;">Alerta personalizada cando o paciente apraza accións de prioridades altas.</p>
+    <img src="static/img/app/notificacion-tutor.png" alt="Notificación Titor" style="width: 300px; height: auto;" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CalmaTEA</p>
+  </footer>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalmaTEA - Estado do arte</title>
+  <link rel="icon" type="image/png" href="static/favicon.png" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script src="static/js/script.js" defer></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand">
+        <img src="static/img/logo_CalmaTEA.png" alt="Logo CalmaTEA" class="logo-img" />
+      </a>
+      <div class="navbar-menu">
+        <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+        <a href="har.html" class="navbar-item">HAR</a>
+        <a href="web.html" class="navbar-item">Web de administración</a>
+        <a href="app.html" class="navbar-item">App CalmaTEA</a>
+        <a href="wearos.html" class="navbar-item">Wear OS</a>
+      </div>
+    </div>
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="navbar-menu-dropdown">
+      <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+      <a href="har.html" class="navbar-item">HAR</a>
+      <a href="web.html" class="navbar-item">Web de administración</a>
+      <a href="app.html" class="navbar-item">App CalmaTEA</a>
+      <a href="wearos.html" class="navbar-item">Wear OS</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h1>Estado do arte e aspectos legais</h1>
+    <h3>Aplicacións de xestión de hábitos e alarmas</h3>
+  
+    <p>
+      No mercado actual existen moitas aplicacións para organizar tarefas e hábitos, pero poucas están pensadas para persoas que precisan apoio adicional para seguir unha rutina diaria. Persoas con <strong>TEA</strong>, <strong>TDAH</strong>, <strong>Alzhéimer</strong> ou <strong>discapacidade intelectual</strong> necesitan máis que unha lista de tarefas: precisan acompañamento, claridade visual, alarmas accesibles e idealmente unha forma de saber se a tarefa foi feita.
+    </p>
+  
+    <p>
+      A continuación analizamos as aplicacións máis coñecidas do mercado e os seus puntos fortes e débiles en catro criterios fundamentais:
+      <strong>seguimento de hábitos</strong>, <strong>recordatorios e notificacións</strong>, <strong>verificación da acción</strong> e <strong>adaptabilidade da interface</strong>.
+    </p>
+  
+    <ul>
+      <li><strong>Streaks</strong>: aplicación sinxela e visual para crear hábitos diarios. Moi boa para persoas organizadas, pero <strong>non permite verificar se a acción se fixo</strong>, nin ofrece opcións de accesibilidade ou personalización.</li>
+  
+      <li><strong>Habitica</strong>: transforma tarefas en puntos nun xogo de rol. Pode ser motivadora, pero a súa estética e funcionamento <strong>poden resultar confusos ou sobreestimulantes</strong> para usuarios con TEA. Ademais, tampouco verifica as accións.</li>
+  
+      <li><strong>Productive</strong>: deseño moderno e elegante. Ideal para adultos que queiran mellorar hábitos. <strong>Non ofrece pictogramas</strong> nin opcións de accesibilidade cognitiva.</li>
+  
+      <li><strong>Todoist</strong>: moi usada en contornos profesionais. Permite listas, datas límite, etiquetas, etc. Pero <strong>non está pensada para persoas neurodiverxentes</strong>: require moita autoxestión e organización abstracta.</li>
+  
+      <li><strong>Habitify</strong>: orientada a establecer hábitos e medir o progreso. É visualmente limpa, pero <strong>sen soporte para reforzos visuais ou auditivos</strong>, nin para persoas con dificultades cognitivas.</li>
+  
+      <li><strong>Alarmy</strong>: a excepción. Para desactivar a alarma hai que facer unha tarefa (resolver un problema, sacar unha foto...). Aínda que é unha idea interesante, <strong>está deseñada para espertar xente, non para guiar rutinas completas</strong> ao longo do día.</li>
+  
+      <li><strong>Tiimo</strong>: probablemente a aplicación máis próxima á filosofía de CalmaTEA. Usa pictogramas, cores e planificación visual. Moi pensada para persoas con TEA. Pero aínda así, <strong>requere que o usuario confirme manualmente cada acción</strong>, o cal pode ser unha barreira para moitos perfís. Ademais, non conta con visión por computador nin verificación automática.</li>
+    </ul>
+  
+    <p>
+      Neste contexto, <strong>CalmaTEA propón unha solución máis completa e adaptada</strong>, combinando:
+    </p>
+  
+    <ul>
+      <li>Alarmas visuais e auditivas con pictogramas personalizados.</li>
+      <li>Seguimento da rutina paso a paso.</li>
+      <li>Verificación automática da acción mediante recoñecemento visual.</li>
+      <li>Interface adaptable para distintos niveis de comprensión.</li>
+      <li>Opcións para avisar aos coidadores se non se realiza unha tarefa.</li>
+    </ul>
+  
+    <div class="tabla-container">
+      <table class="tabela-f1">
+        <caption>Comparación de funcionalidades entre aplicacións e CalmaTEA</caption>
+        <thead>
+          <tr>
+            <th>Aplicación</th>
+            <th>Seguimento de hábitos</th>
+            <th>Notificacións</th>
+            <th>Verificación da acción</th>
+            <th>Adaptabilidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Streaks</td><td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
+          <tr><td>Habitica</td><td>✔️</td><td>✔️</td><td>❌</td><td>⚠️ Limitada</td></tr>
+          <tr><td>Productive</td><td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
+          <tr><td>Todoist</td><td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
+          <tr><td>Habitify</td><td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
+          <tr><td>Alarmy</td><td>❌</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
+          <tr><td>Tiimo</td><td>✔️</td><td>✔️</td><td>❌</td><td>✔️</td></tr>
+          <tr><td><strong>CalmaTEA</strong></td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <h3>Proxectos similares</h3>
+  
+    <p>
+      Ao longo dos últimos anos xurdiron diferentes proxectos tecnolóxicos que, como CalmaTEA, buscan mellorar a autonomía, seguridade e inclusión das persoas con necesidades de apoio. Aínda que comparten obxectivos xerais, cada un deles aborda un aspecto específico da diversidade funcional.
+    </p>
+  
+    <h4>Taimun Watch</h4>
+    <p>
+      <strong>Taimun Watch</strong> é un smartwatch deseñado para detectar situacións de estrés ou ansiedade en persoas con TEA. Mide parámetros fisiolóxicos como a frecuencia cardíaca ou a condutividade da pel, lanzando alertas cando detecta cambios que poidan anticipar unha crise emocional.
+    </p>
+    <p>
+      O seu obxectivo é promover a autorregulación emocional e a prevención de colapsos, pero non guía rutinas nin verifica que se realicen tarefas específicas.
+    </p>
+  
+    <h4>VirtualTEA</h4>
+    <p>
+      <strong>VirtualTEA</strong> utiliza realidade virtual para simular situacións sociais e mellorar as habilidades comunicativas de persoas con TEA. A idea é crear escenarios controlados onde practicar interaccións como pedir comida ou falar cun dependente.
+    </p>
+    <p>
+      Aínda que útil neste eido, non está pensado para a xestión de rutinas nin ten funcionalidades de verificación ou asistencia diaria.
+    </p>
+  
+    <h4>IDEAL</h4>
+    <p>
+      <strong>IDEAL</strong> é un proxecto europeo centrado na inclusión dixital. Desenvolve contidos accesibles e plataformas adaptadas para persoas con discapacidade intelectual, mellorando o acceso ao coñecemento e á formación.
+    </p>
+    <p>
+      O seu foco está na alfabetización dixital, pero non contempla ferramentas para apoiar a vida diaria ou validar accións físicas.
+    </p>
+  
+    <h4>AEGIS</h4>
+    <p>
+      <strong>AEGIS</strong> aplica visión artificial para recoñecer expresións faciais e emocións. Pode ser útil para mellorar a comunicación en persoas con dificultades para expresar ou interpretar emocións.
+    </p>
+    <p>
+      Non obstante, non xestiona rutinas nin ofrece guías de acción. É unha ferramenta centrada na interacción social, non na asistencia diaria.
+    </p>
+  
+    <div class="tabla-container">
+      <table class="tabela-f1">
+        <caption>Comparativa de proxectos similares</caption>
+        <thead>
+          <tr>
+            <th>Proxecto</th>
+            <th>Verificación de accións</th>
+            <th>Asistencia diaria</th>
+            <th>IA adaptativa</th>
+            <th>Tecnoloxía principal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Taimun Watch</td>
+            <td>❌</td>
+            <td>⚠️ Limitada</td>
+            <td>✔️</td>
+            <td>Smartwatch, sensores fisiolóxicos</td>
+          </tr>
+          <tr>
+            <td>VirtualTEA</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>Realidade virtual</td>
+          </tr>
+          <tr>
+            <td>IDEAL</td>
+            <td>❌</td>
+            <td>⚠️ Parcial</td>
+            <td>❌</td>
+            <td>Web accesible, contidos educativos</td>
+          </tr>
+          <tr>
+            <td>AEGIS</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>Visión artificial, recoñecemento facial</td>
+          </tr>
+          <tr>
+            <td><strong>CalmaTEA</strong></td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>Visión por computador, pictogramas, alarmas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <p>
+      Como se pode observar, cada proxecto cobre un ámbito específico (emocional, social, educativo, comunicativo...), pero <strong>CalmaTEA é o único que combina todas estas dimensións cun enfoque directo sobre a rutina diaria</strong>.
+    </p>
+  </div>
+  
+  <div class="content">
+    <h2>Aspectos éticos e legais en España e Europa</h2>
+  
+    <p>
+      A implementación de sistemas como CalmaTEA, que inclúen videovixilancia, intelixencia artificial e recoñecemento de accións, require un cumprimento estrito das leis de protección de datos e de privacidade vixentes tanto en España como na Unión Europea. Non só se trata dun requisito legal, senón dun compromiso ético coas persoas usuarias.
+    </p>
+  
+    <h3>🔐 Leis e normativas clave</h3>
+  
+    <ul>
+      <li>
+        <strong>Ámbito doméstico e protección de datos:</strong> segundo a <abbr title="Lei Orgánica de Protección de Datos e Garantía de Dereitos Dixitais">LOPDGDD</abbr>, se as cámaras se usan exclusivamente dentro do fogar e para uso persoal (non compartido), non é obrigatorio aplicar a normativa de protección de datos. Iso si, en canto se compartan ou almacenen datos, aplícanse todas as obrigas do <abbr title="Regulamento Xeral de Protección de Datos">RXPD</abbr>.
+      </li>
+      <li>
+        <strong>Privacidade e proporcionalidade:</strong> o uso de cámaras e sensores debe xustificarse en termos de benestar, seguridade ou asistencia, e debe evitar a intrusión innecesaria. Isto vén recollido no RXPD e no Regulamento (UE) 2018/1725.
+      </li>
+      <li>
+        <strong>Minimización de datos:</strong> o sistema debe procesar os datos en tempo real e evitar almacenar imaxes salvo que sexa indispensable, tal como indica o artigo 5.1.c do RXPD.
+      </li>
+      <li>
+        <strong>Consentimento informado:</strong> a persoa debe ser informada de xeito claro e adaptado sobre o uso do sistema. Se non pode outorgar consentimento, serán os seus titores legais quen deban autorizar o uso co fin de favorecer o seu benestar.
+      </li>
+      <li>
+        <strong>Uso de datos biométricos:</strong> calquera dato relacionado con recoñecemento facial ou movementos é considerado “especialmente protexido”. O RXPD (art. 9) require medidas adicionais de seguridade neste caso.
+      </li>
+      <li>
+        <strong>Ciberseguridade e integridade:</strong> o sistema debe cumprir a LSSI-CE (Lei de Servizos da Sociedade da Información) e o <abbr title="Esquema Nacional de Seguridade">ENS</abbr>, para garantir que os datos non sexan accedidos por terceiros sen autorización.
+      </li>
+      <li>
+        <strong>Supervisión e control:</strong> toda solución tecnolóxica con impacto en datos persoais debe contar con mecanismos de auditoría, seguimento e capacidade de rectificación, segundo a normativa europea.
+      </li>
+    </ul>
+  
+    <h3>✅ Conclusións legais e éticas</h3>
+  
+    <p>
+      O uso de intelixencia artificial no fogar é legal e viable en España, sempre que se cumpran tres principios clave: 
+      <strong>consentimento, proporcionalidade e seguridade</strong>. CalmaTEA, ao operar principalmente no ámbito doméstico e asistencial, cumpre coa base legal sempre que:
+    </p>
+  
+    <ul>
+      <li>Informe con claridade e transparencia sobre o funcionamento do sistema.</li>
+      <li>Obteña o consentimento informado do usuario ou do seu representante legal.</li>
+      <li>Minimize o almacenamento de datos, priorizando o procesamento en local.</li>
+      <li>Implemente protocolos de ciberseguridade para evitar accesos non autorizados.</li>
+      <li>Permita a revisión, rectificación ou eliminación de datos baixo solicitude.</li>
+    </ul>
+  
+    <p>
+      Desde unha perspectiva ética, o sistema debe estar deseñado para acompañar, non controlar. Non debe substituir o criterio humano, senón ser unha ferramenta que apoie a toma de decisións, a autonomía e a seguridade do usuario.
+    </p>
+  
+    <p>
+      CalmaTEA destaca fronte a outras solucións no seu compromiso coa <strong>privacidade, autonomía e accesibilidade</strong>. A súa capacidade para verificar accións realizadas, lanzar alertas personalizadas e adaptarse a diferentes perfís neurodiverxentes convérteo nunha alternativa viable tanto para o ámbito doméstico como para a súa futura comercialización en contornas profesionais ou clínicas.
+    </p>
+  
+    <p>
+      A viabilidade comercial tamén dependerá de incluír certificacións específicas (por exemplo, se se utilizan sensores médicos) e de cumprir con todos os estándares de protección de datos e accesibilidade europeos.
+    </p>
+  
+    <p>
+      En resumo, cun deseño coidadoso, transparente e legalmente informado, <strong>CalmaTEA pode ofrecer unha solución tecnolóxica que mellore a vida das persoas usuarias</strong>, reducindo a carga dos coidadores e respectando sempre os dereitos fundamentais.
+    </p>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2025 CalmaTEA</p>
+  </footer>
+
+  <!-- Modal para ampliar imágenes -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+</body>
+
+</html>

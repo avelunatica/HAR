@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalmaTEA - Web de administración</title>
+    <link rel="icon" type="image/png" href="static/favicon.png" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/script.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-brand">
+        <img src="static/img/logo_CalmaTEA.png" alt="Logo CalmaTEA" class="logo-img" />
+      </a>
+      <div class="navbar-menu">
+        <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+        <a href="har.html" class="navbar-item">HAR</a>
+        <a href="web.html" class="navbar-item">Web de administración</a>
+        <a href="app.html" class="navbar-item">App CalmaTEA</a>
+        <a href="wearos.html" class="navbar-item">Wear OS</a>
+      </div>
+    </div>
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="navbar-menu-dropdown">
+      <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+      <a href="har.html" class="navbar-item">HAR</a>
+      <a href="web.html" class="navbar-item">Web de administración</a>
+      <a href="app.html" class="navbar-item">App CalmaTEA</a>
+      <a href="wearos.html" class="navbar-item">Wear OS</a>
+    </div>
+  </nav>
+
+      <div class="content">
+        <h1>Web de administración</h1>
+        <h3> Introducción</h3>
+        <p>
+          Creouse unha web para o uso dos administradores, para poder administrar a agregación, borrado
+          ou modificación dos usuarios.
+          Primeiramente a web ten unha explicación de que é CalmaTEA e o transtorno de espectro au
+         tista e un login con usuario e contrasinal no que únicamente se poden rexistrar os administradores,
+          aínda que futuramente poderíase engadir o resto de tipos de usuario.
+        </p>  
+        
+        <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <video controls autoplay muted loop style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <source src="static/web.mp4" type="video/mp4">
+            O teu navegador non soporta o vídeo en formato MP4.
+          </video>
+          <figcaption style="margin-top: 0.5rem;">Mostra da páxina web</figcaption>
+        </figure>
+        
+        
+     
+
+        <h3 style="text-align: left; max-width: 800px; margin: 1rem auto 0.5rem auto;">Configuracións</h3>
+          <p style="max-width: 800px; margin: 0 auto 1.5rem auto; text-align: left;">
+            Unha vez rexistrado, un administrador pode facer 3 accións principais:
+          </p>
+          <ul style="max-width: 800px; margin: 0 auto 2rem auto; text-align: left;">
+            <li><strong>Xestión de titores:</strong> Onde se pode crear un novo tipo de titor, modificarlle algún dos seus parámetros (incluído a contrasinal se é necesario) ou borralo definitivamente do sistema.</li>
+            <li><strong>Xestión de TEA:</strong> Similar ó anterior punto, pero centrado nos usuarios con TEA e os seus parámetros específicos.</li>
+            <li><strong>Relación Titor‑TEA:</strong> Nesta configuración enlázanse os diferentes titores cos seus usuarios TEA correspondentes.</li>
+          </ul>
+          <p style="max-width: 800px; margin: 0 auto 2rem auto; text-align: left;">
+            Toda a información da base de datos se conversa cunha API REST. É por iso que no prototipo esta web está en local: xa que a base de datos tamén está en local.
+          </p>
+
+
+          <h3> Xestión de titores </h3>
+
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/2.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de titores</figcaption>
+          </figure>
+
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/2.1.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de creación de titores</figcaption>
+          </figure>
+
+          <h3> Xestión de TEA </h3>
+          
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/3.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de usuario TEA</figcaption>
+          </figure>
+          
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/3.1.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de creación de usuario TEA</figcaption>
+          </figure>
+
+          <h3> Xestión de relación titor - TEA </h3>
+          
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/4.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de relación titor - TEA</figcaption>
+          </figure>
+          
+          <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <img src="static/img/web/4.1.png" alt="Páxina de inicio" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <figcaption style="margin-top: 0.5rem;">Páxina de xestión de titor -TEA</figcaption>
+          </figure>
+
+      </div>
+      
+          
+
+    <footer>
+        <p>&copy; 2025 CalmaTEA</p>
+    </footer>
+
+    <!-- Modal for zoom images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>

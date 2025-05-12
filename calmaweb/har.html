@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalmaTEA - Estado do arte</title>
+    <link rel="icon" type="image/png" href="static/favicon.png" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/script.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" class="navbar-brand">
+            <img src="static/img/logo_CalmaTEA.png" alt="Logo CalmaTEA" class="logo-img" />
+          </a>
+          <div class="navbar-menu">
+            <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+            <a href="har.html" class="navbar-item">HAR</a>
+            <a href="web.html" class="navbar-item">Web de administración</a>
+            <a href="app.html" class="navbar-item">App CalmaTEA</a>
+            <a href="wearos.html" class="navbar-item">Wear OS</a>
+          </div>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="navbar-menu-dropdown">
+          <a href="estado-arte.html" class="navbar-item">Estado do arte</a>
+          <a href="har.html" class="navbar-item">HAR</a>
+          <a href="web.html" class="navbar-item">Web de administración</a>
+          <a href="app.html" class="navbar-item">App CalmaTEA</a>
+          <a href="wearos.html" class="navbar-item">Wear OS</a>
+        </div>
+      </nav>
+
+    <div class="content">
+        <h2>Implementación de HAR e Resultados</h2>
+
+        <p>
+            No módulo <strong>CalmaTEA</strong> integramos un sistema de recoñecemento de accións humanas (<strong>Human Action Recognition – HAR</strong>),
+            que permite identificar accións específicas da rutina diaria a través de vídeo en tempo real.
+
+            <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <video controls autoplay muted loop style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                  <source src="static/HAR.mp4" type="video/mp4">
+                  O teu navegador non soporta o vídeo en formato MP4.
+                </video>
+                <figcaption style="margin-top: 0.5rem;">Mostra da app no SmartWatch</figcaption>
+              </figure>
+
+        </p>
+
+        <h3>Modelo empregado: Temporal Segment Network (TSN)</h3>
+        <p>
+            Como punto de partida, empregouse o modelo preentrenado <strong>TSN (Temporal Segment Network)</strong>,
+            concretamente o checkpoint <code>tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb</code>, dispoñible
+            no framework <strong>MMAction2</strong>.
+        </p>
+        <p>
+            TSN é unha arquitectura deseñada para recoñecer accións en vídeo a partir de mostras temporais dispersas.
+            Isto permite capturar a estrutura global dunha acción sen ter que procesar todo o vídeo, o que resulta ideal para sistemas en tempo real como CalmaTEA.
+        </p>
+        <p>
+            A arquitectura está baseada en <strong>ResNet‑50</strong> e foi preentrenada sobre o conxunto de datos
+            <strong>Kinetics‑500</strong>, un dos máis utilizados no recoñecemento de accións humanas.
+        </p>
+
+        <h3>Resultados obtidos</h3>
+        <p>
+            A continuación móstranse os resultados de avaliación tras adaptar o modelo ás accións clave de CalmaTEA.
+            As gráficas e táboa resumen mostran métricas de precisión e F1‑score por clase, así como a matriz de confusión das predicións.
+        </p>
+
+        <div style="text-align: center;">
+            <figure>
+                <img src="static/img/graphics/confusion_matrix.png" alt="Matriz de confusión HAR (Kinetics-400)" style="max-width: 90%; height: auto;" />
+                <figcaption>Matriz de confusión das predicións HAR (Kinetics‑500)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="static/img/graphics/f1score_por_clase.png" alt="F1-score por clase no sistema HAR" style="max-width: 90%; height: auto;" />
+                <figcaption>F1‑score por clase no sistema HAR (Kinetics‑500)</figcaption>
+            </figure>
+        </div>
+
+        <div class="tabla-container">
+            <table class="tabela-f1">
+                <caption>Resumo de puntuacións F1 por clase</caption>
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Precisión</th>
+                        <th>F1‑score</th>
+                        <th>Mostras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Afeitar ou recortar barba</td><td>0.89</td><td>0.94</td><td>75</td></tr>
+                    <tr><td>Beber</td><td>1.00</td><td>0.98</td><td>79</td></tr>
+                    <tr><td>Comer algo</td><td>1.00</td><td>0.96</td><td>39</td></tr>
+                    <tr><td>Cepillarse os dentes</td><td>1.00</td><td>0.95</td><td>81</td></tr>
+                    <tr><td>Usar o ordenador</td><td>1.00</td><td>1.00</td><td>75</td></tr>
+                    <tr><td>Escribir ou pintar/dibuxar</td><td>1.00</td><td>0.99</td><td>75</td></tr>
+                    <tr><td>Aplicar crema</td><td>1.00</td><td>0.89</td><td>75</td></tr>
+                    <tr><td>Acariciar animal</td><td>1.00</td><td>1.00</td><td>10</td></tr>
+                    <tr><td>Facer algo no cabelo</td><td>0.88</td><td>0.94</td><td>75</td></tr>
+                    <tr><td>Atar un nó (non unha corbata)</td><td>0.94</td><td>0.97</td><td>75</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            Os resultados mostran unha elevada precisión na maioría das accións, con <strong>valores F1 superiores ao 0.94</strong> en case todas as categorías.
+            Destaca o excelente rendemento en accións como <em>usar o ordenador</em> ou <em>acariciar animal</em>, onde o modelo acada un 100 % de acerto.
+            A matriz de confusión amosa moi poucas confusións entre clases, o que valida a robustez do modelo incluso con accións semellantes.
+        </p>
+
+        <p>
+            En resumo, o uso de TSN como arquitectura base permite recoñecer accións humanas relevantes de xeito fiable e eficiente,
+            sendo unha excelente opción para tarefas de monitorización e apoio en contornas asistenciais, como é o caso de CalmaTEA.
+        </p>
+        
+        <h3>Informe detallado do recoñecemento de actividades humanas (HAR)</h3>
+        
+        <p>
+            O sistema de recoñecemento de actividades humanas (HAR) empregado en CalmaTEA baséase na identificación automática de accións realizadas por persoas usuarias mediante modelos de visión por computador. A súa principal función é validar se determinadas tarefas foron ou non realizadas, o que representa unha funcionalidade diferencial fronte a outras solucións de organización de rutinas.
+        </p>
+        
+        <p>
+            Para comprobar a viabilidade técnica da solución, realizáronse múltiples probas cunha selección de accións relevantes e con distintas configuracións de modelos. O sistema valida cada acción mediante un mecanismo de umbralización: a detección considérase correcta só se a acción supera un determinado nivel de confianza dentro dunha frecuencia mínima.
+        </p>
+        
+        <p>
+            Durante a validación experimental utilizáronse aproximadamente 75 mostras por clase. Os resultados poden observarse nas figuras anteriores, onde se representan o F1-score acadado para cada unha das clases analizadas e a matriz de confusión correspondente.
+        </p>
+        
+        <h4>Limitacións detectadas nas probas</h4>
+        <ul>
+            <li><strong>Limitacións do dataset Kinetics-400:</strong> algunhas accións non están suficientemente representadas, o que provoca dificultades na súa detección.</li>
+            <li><strong>Condicións de gravación:</strong> aspectos como a colocación da cámara, a luz ou o contraluz afectan fortemente á calidade das predicións.</li>
+            <li><strong>Accións preto do rostro:</strong> como cepillarse os dentes ou beber, poden verse afectadas por gafas, barba ou pelo longo.</li>
+        </ul>
+        
+        <h4>Modelos avaliados e arquitectura TSN</h4>
+        <p>
+            Probáronse arquitecturas modernas como Transformers e modelos adestrados sobre Kinetics‑700. Porén, o modelo TSN preentrenado con ImageNet ofreceu o mellor equilibrio entre precisión e eficiencia, sendo escollido para a integración no sistema CalmaTEA.
+        </p>
+        
+        <h4>Potencial de mellora mediante fine-tuning</h4>
+        <p>
+            Unha liña prometedora sería o <strong>fine-tuning</strong> con datos reais capturados no entorno doméstico. Isto permitiría personalizar o recoñecemento segundo características do usuario (barba, gafas, roupa...) mantendo os pesos das capas iniciais e adaptando as capas finais.
+        </p>
+        <ul>
+            <li>Incrementar a precisión sen grandes volumes de datos</li>
+            <li>Adaptación ao usuario e á súa contorna</li>
+            <li>Redución de falsos positivos</li>
+        </ul>
+        
+        <h4>Conclusión</h4>
+        <p>
+            A integración dun sistema HAR é viable e efectiva, especialmente se se ten coidado coa selección do modelo, o conxunto de datos e a súa adaptación ao entorno físico. TSN demostrou ser unha opción sólida, pero o <strong>fine-tuning específico</strong> representa unha mellora clave para aumentar a robustez do sistema CalmaTEA.
+        </p>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CalmaTEA</p>
+    </footer>
+
+    <!-- Modal for zoom images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>
