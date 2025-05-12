@@ -1,0 +1,826 @@
+True Class,Predicted Class,Percentage,Result
+applying cream,applying cream,89.6,True
+applying cream,doing something on hair,92.91,False
+applying cream,applying cream,73.73,True
+applying cream,applying cream,88.02,True
+applying cream,doing something on hair,92.91,False
+applying cream,applying cream,99.61,True
+applying cream,applying cream,95.95,True
+applying cream,trimming or shaving beard,99.92,False
+applying cream,applying cream,86.77,True
+applying cream,applying cream,90.88,True
+applying cream,applying cream,85.49,True
+applying cream,applying cream,72.16,True
+applying cream,applying cream,89.06,True
+applying cream,applying cream,85.28,True
+applying cream,smoking,86.13,False
+applying cream,applying cream,75.94,True
+applying cream,applying cream,79.96,True
+applying cream,applying cream,87.04,True
+applying cream,applying cream,99.26,True
+applying cream,applying cream,85.1,True
+applying cream,applying cream,99.97,True
+applying cream,applying cream,93.06,True
+applying cream,smoking,99.1,False
+applying cream,applying cream,89.06,True
+applying cream,applying cream,77.04,True
+applying cream,applying cream,99.33,True
+applying cream,applying cream,99.49,True
+applying cream,applying cream,93.06,True
+applying cream,applying cream,85.49,True
+applying cream,applying cream,89.06,True
+applying cream,doing something on hair,92.91,False
+applying cream,applying cream,77.04,True
+applying cream,smoking,99.94,False
+applying cream,applying cream,89.06,True
+applying cream,trimming or shaving beard,79.69,False
+applying cream,applying cream,100.0,True
+applying cream,trimming or shaving beard,95.45,False
+applying cream,applying cream,99.98,True
+applying cream,applying cream,87.56,True
+applying cream,trimming or shaving beard,99.0,False
+applying cream,applying cream,99.26,True
+applying cream,applying cream,76.95,True
+applying cream,doing something on hair,85.9,False
+applying cream,applying cream,97.89,True
+applying cream,applying cream,99.98,True
+applying cream,applying cream,97.89,True
+applying cream,applying cream,99.3,True
+applying cream,applying cream,87.04,True
+applying cream,applying cream,99.12,True
+applying cream,trimming or shaving beard,73.09,False
+applying cream,applying cream,98.13,True
+applying cream,applying cream,95.8,True
+applying cream,applying cream,70.94,True
+applying cream,doing something on hair,92.91,False
+applying cream,trimming or shaving beard,78.71,False
+applying cream,applying cream,99.61,True
+applying cream,doing something on hair,84.36,False
+applying cream,applying cream,99.97,True
+applying cream,applying cream,90.2,True
+applying cream,applying cream,77.04,True
+applying cream,applying cream,79.32,True
+applying cream,applying cream,95.8,True
+applying cream,applying cream,82.54,True
+applying cream,applying cream,99.3,True
+applying cream,applying cream,99.91,True
+applying cream,applying cream,87.69,True
+applying cream,applying cream,85.49,True
+applying cream,applying cream,97.91,True
+applying cream,applying cream,78.67,True
+applying cream,applying cream,95.02,True
+applying cream,applying cream,95.54,True
+applying cream,applying cream,72.16,True
+applying cream,applying cream,91.58,True
+applying cream,applying cream,98.23,True
+applying cream,applying cream,87.04,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,trimming or shaving beard,96.25,False
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.67,True
+brushing teeth,brushing teeth,99.93,True
+brushing teeth,brushing teeth,98.7,True
+brushing teeth,brushing teeth,99.94,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,tying knot (not on a tie),82.75,False
+brushing teeth,brushing teeth,99.16,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.67,True
+brushing teeth,brushing teeth,98.34,True
+brushing teeth,brushing teeth,99.98,True
+brushing teeth,brushing teeth,99.65,True
+brushing teeth,brushing teeth,99.88,True
+brushing teeth,brushing teeth,99.95,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,99.98,True
+brushing teeth,brushing teeth,99.94,True
+brushing teeth,brushing teeth,99.92,True
+brushing teeth,brushing teeth,99.98,True
+brushing teeth,brushing teeth,98.57,True
+brushing teeth,brushing teeth,99.71,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,99.94,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,tying knot (not on a tie),93.48,False
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,tying knot (not on a tie),87.42,False
+brushing teeth,brushing teeth,99.79,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,92.86,True
+brushing teeth,brushing teeth,99.91,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.96,True
+brushing teeth,tying knot (not on a tie),85.94,False
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,97.73,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,98.73,True
+brushing teeth,brushing teeth,97.64,True
+brushing teeth,brushing teeth,99.98,True
+brushing teeth,brushing teeth,99.76,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.86,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.97,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.96,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,97.91,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.99,True
+brushing teeth,brushing teeth,99.86,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.96,True
+brushing teeth,brushing teeth,98.43,True
+brushing teeth,smoking,92.87,False
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,trimming or shaving beard,97.82,False
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,99.89,True
+brushing teeth,brushing teeth,100.0,True
+brushing teeth,brushing teeth,100.0,True
+doing something on hair,doing something on hair,98.4,True
+doing something on hair,doing something on hair,88.32,True
+doing something on hair,doing something on hair,87.98,True
+doing something on hair,doing something on hair,95.66,True
+doing something on hair,doing something on hair,94.01,True
+doing something on hair,doing something on hair,89.4,True
+doing something on hair,doing something on hair,79.42,True
+doing something on hair,doing something on hair,78.38,True
+doing something on hair,doing something on hair,99.62,True
+doing something on hair,doing something on hair,89.94,True
+doing something on hair,doing something on hair,82.45,True
+doing something on hair,doing something on hair,90.89,True
+doing something on hair,doing something on hair,87.6,True
+doing something on hair,doing something on hair,96.74,True
+doing something on hair,doing something on hair,83.93,True
+doing something on hair,doing something on hair,97.42,True
+doing something on hair,doing something on hair,92.09,True
+doing something on hair,doing something on hair,91.84,True
+doing something on hair,doing something on hair,84.91,True
+doing something on hair,doing something on hair,76.53,True
+doing something on hair,doing something on hair,89.94,True
+doing something on hair,doing something on hair,95.12,True
+doing something on hair,doing something on hair,92.12,True
+doing something on hair,doing something on hair,99.62,True
+doing something on hair,doing something on hair,87.54,True
+doing something on hair,doing something on hair,98.23,True
+doing something on hair,doing something on hair,95.24,True
+doing something on hair,doing something on hair,93.46,True
+doing something on hair,doing something on hair,94.72,True
+doing something on hair,doing something on hair,81.19,True
+doing something on hair,doing something on hair,92.53,True
+doing something on hair,doing something on hair,89.78,True
+doing something on hair,doing something on hair,96.21,True
+doing something on hair,doing something on hair,84.83,True
+doing something on hair,doing something on hair,96.98,True
+doing something on hair,doing something on hair,87.6,True
+doing something on hair,doing something on hair,82.29,True
+doing something on hair,doing something on hair,99.81,True
+doing something on hair,doing something on hair,93.98,True
+doing something on hair,doing something on hair,95.13,True
+doing something on hair,doing something on hair,88.32,True
+doing something on hair,doing something on hair,93.35,True
+doing something on hair,doing something on hair,94.72,True
+doing something on hair,doing something on hair,95.43,True
+doing something on hair,doing something on hair,93.29,True
+doing something on hair,doing something on hair,98.41,True
+doing something on hair,doing something on hair,99.52,True
+doing something on hair,doing something on hair,91.36,True
+doing something on hair,doing something on hair,96.29,True
+doing something on hair,doing something on hair,82.01,True
+doing something on hair,doing something on hair,85.36,True
+doing something on hair,doing something on hair,76.53,True
+doing something on hair,doing something on hair,88.67,True
+doing something on hair,doing something on hair,96.29,True
+doing something on hair,doing something on hair,91.73,True
+doing something on hair,doing something on hair,98.41,True
+doing something on hair,doing something on hair,90.89,True
+doing something on hair,doing something on hair,89.5,True
+doing something on hair,doing something on hair,99.86,True
+doing something on hair,doing something on hair,84.57,True
+doing something on hair,doing something on hair,87.54,True
+doing something on hair,doing something on hair,97.67,True
+doing something on hair,doing something on hair,95.12,True
+doing something on hair,doing something on hair,97.85,True
+doing something on hair,doing something on hair,86.75,True
+doing something on hair,doing something on hair,97.11,True
+doing something on hair,doing something on hair,74.35,True
+doing something on hair,doing something on hair,90.35,True
+doing something on hair,doing something on hair,92.8,True
+doing something on hair,doing something on hair,99.15,True
+doing something on hair,doing something on hair,94.87,True
+doing something on hair,doing something on hair,91.54,True
+doing something on hair,doing something on hair,91.36,True
+doing something on hair,doing something on hair,85.04,True
+doing something on hair,doing something on hair,94.56,True
+drinking,drinking,98.92,True
+drinking,drinking,99.94,True
+drinking,drinking,98.86,True
+drinking,drinking,98.73,True
+drinking,drinking,95.45,True
+drinking,drinking,99.62,True
+drinking,drinking,96.86,True
+drinking,drinking,95.18,True
+drinking,drinking,98.88,True
+drinking,drinking,99.87,True
+drinking,drinking,93.33,True
+drinking,drinking,99.34,True
+drinking,drinking,90.75,True
+drinking,drinking,96.4,True
+drinking,drinking,76.34,True
+drinking,drinking,80.28,True
+drinking,drinking,80.0,True
+drinking,drinking,91.9,True
+drinking,drinking,82.41,True
+drinking,drinking,80.22,True
+drinking,drinking,96.34,True
+drinking,drinking,92.88,True
+drinking,drinking,98.25,True
+drinking,drinking,81.06,True
+drinking,drinking,94.53,True
+drinking,drinking,94.86,True
+drinking,drinking,75.58,True
+drinking,drinking,99.87,True
+drinking,drinking,99.58,True
+drinking,drinking,82.05,True
+drinking,trimming or shaving beard,72.47,False
+drinking,drinking,99.69,True
+drinking,drinking,99.7,True
+drinking,drinking,99.18,True
+drinking,drinking,94.72,True
+drinking,drinking,96.71,True
+drinking,drinking,93.17,True
+drinking,drinking,99.29,True
+drinking,drinking,85.9,True
+drinking,drinking,99.84,True
+drinking,drinking,75.78,True
+drinking,drinking,98.37,True
+drinking,drinking,74.95,True
+drinking,drinking,95.82,True
+drinking,drinking,96.2,True
+drinking,drinking,84.05,True
+drinking,drinking,97.71,True
+drinking,drinking,99.87,True
+drinking,drinking,76.31,True
+drinking,drinking,98.6,True
+drinking,drinking,71.82,True
+drinking,doing something on hair,81.18,False
+drinking,drinking,99.65,True
+drinking,drinking,79.98,True
+drinking,drinking,84.21,True
+drinking,drinking,94.48,True
+drinking,drinking,79.65,True
+drinking,drinking,99.81,True
+drinking,drinking,82.52,True
+drinking,gargling,96.14,False
+drinking,drinking,81.47,True
+drinking,drinking,88.71,True
+drinking,drinking,99.79,True
+drinking,drinking,92.1,True
+drinking,drinking,98.7,True
+drinking,drinking,97.34,True
+drinking,drinking,93.45,True
+drinking,drinking,99.97,True
+drinking,drinking,98.47,True
+drinking,drinking,95.77,True
+drinking,drinking,99.9,True
+drinking,drinking,98.51,True
+drinking,drinking,91.92,True
+drinking,drinking,98.69,True
+drinking,drinking,96.99,True
+eating something,doing something on hair,80.08,True
+eating something,eating something,86.54,True
+eating something,eating something,100.0,True
+eating something,eating something,99.35,True
+eating something,eating something,100.0,True
+eating something,doing something on hair,80.79,True
+eating something,eating something,99.64,True
+eating something,eating something,98.25,True
+eating something,eating something,88.41,True
+eating something,eating something,88.48,True
+eating something,eating something,69.79,True
+eating something,eating something,88.51,True
+eating something,eating something,71.36,True
+eating something,eating something,99.9,True
+eating something,eating something,100.0,True
+eating something,eating something,95.0,True
+eating something,eating something,69.92,True
+eating something,eating something,77.59,True
+eating something,eating something,83.33,True
+eating something,eating something,94.6,True
+eating something,eating something,100.0,True
+eating something,doing something on hair,92.42,False
+eating something,eating something,100.0,True
+eating something,eating something,98.92,True
+eating something,eating something,92.99,True
+eating something,eating something,78.8,True
+eating something,eating something,83.04,True
+eating something,eating something,95.62,True
+eating something,eating something,99.53,True
+eating something,eating something,100.0,True
+eating something,eating something,94.47,True
+eating something,eating something,100.0,True
+eating something,eating something,99.25,True
+eating something,eating something,85.33,True
+eating something,doing something on hair,80.56,True
+eating something,eating something,100.0,True
+eating something,eating something,99.49,True
+eating something,eating something,95.04,True
+eating something,eating something,75.43,True
+eating something,eating something,86.08,True
+eating something,eating something,86.54,True
+eating something,eating something,95.21,True
+eating something,eating something,99.97,True
+eating something,eating something,83.0,True
+eating something,eating something,99.75,True
+eating something,eating something,99.99,True
+eating something,eating something,100.0,True
+eating something,eating something,75.64,True
+eating something,eating something,100.0,True
+eating something,eating something,89.41,True
+eating something,eating something,99.85,True
+eating something,eating something,94.96,True
+eating something,eating something,99.95,True
+eating something,eating something,99.86,True
+eating something,eating something,86.1,True
+eating something,eating something,100.0,True
+eating something,eating something,86.18,True
+eating something,doing something on hair,83.04,False
+eating something,eating something,84.38,True
+eating something,eating something,89.58,True
+eating something,eating something,75.32,True
+eating something,eating something,91.02,True
+eating something,eating something,100.0,True
+eating something,eating something,100.0,True
+eating something,eating something,75.24,True
+eating something,eating something,97.2,True
+eating something,eating something,100.0,True
+eating something,eating something,95.12,True
+eating something,eating something,100.0,True
+eating something,eating something,70.21,True
+eating something,eating something,87.64,True
+eating something,eating something,94.43,True
+eating something,eating something,86.12,True
+eating something,eating something,99.62,True
+eating something,eating something,70.2,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,90.18,True
+petting animal,petting animal,76.19,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,98.83,True
+petting animal,petting animal,94.31,True
+petting animal,petting animal,97.31,True
+petting animal,petting animal,99.45,True
+petting animal,petting animal,76.43,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,90.5,True
+petting animal,petting animal,74.77,True
+petting animal,petting animal,75.65,True
+petting animal,petting animal,96.62,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,99.4,True
+petting animal,petting animal,89.7,True
+petting animal,petting animal,76.05,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,90.83,True
+petting animal,petting animal,99.12,True
+petting animal,petting animal,90.47,True
+petting animal,petting animal,93.78,True
+petting animal,petting animal,99.21,True
+petting animal,petting animal,86.7,True
+petting animal,petting animal,91.2,True
+petting animal,petting animal,94.42,True
+petting animal,petting animal,97.05,True
+petting animal,petting animal,99.19,True
+petting animal,petting animal,91.12,True
+petting animal,petting animal,84.39,True
+petting animal,petting animal,96.27,True
+petting animal,petting animal,99.45,True
+petting animal,petting animal,97.37,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,85.47,True
+petting animal,petting animal,99.75,True
+petting animal,petting animal,90.02,True
+petting animal,petting animal,91.61,True
+petting animal,petting animal,85.71,True
+petting animal,petting animal,90.02,True
+petting animal,petting animal,94.24,True
+petting animal,petting animal,85.88,True
+petting animal,petting animal,93.29,True
+petting animal,petting animal,99.0,True
+petting animal,petting animal,90.55,True
+petting animal,petting animal,91.92,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,76.97,True
+petting animal,petting animal,96.15,True
+petting animal,petting animal,90.51,True
+petting animal,petting animal,90.52,True
+petting animal,petting animal,89.74,True
+petting animal,petting animal,76.22,True
+petting animal,petting animal,90.5,True
+petting animal,petting animal,89.89,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,100.0,True
+petting animal,petting animal,93.52,True
+petting animal,petting animal,90.96,True
+petting animal,petting animal,99.97,True
+petting animal,petting animal,88.86,True
+petting animal,petting animal,93.65,True
+petting animal,petting animal,90.25,True
+petting animal,petting animal,93.58,True
+petting animal,petting animal,91.27,True
+petting animal,petting animal,75.61,True
+petting animal,petting animal,99.72,True
+petting animal,petting animal,85.45,True
+petting animal,petting animal,75.92,True
+petting animal,petting animal,99.19,True
+petting animal,petting animal,90.17,True
+petting animal,petting animal,99.75,True
+petting animal,petting animal,74.97,True
+smoking,smoking,72.69,True
+smoking,smoking,72.6,True
+smoking,smoking,96.1,True
+smoking,smoking,97.05,True
+smoking,smoking,98.04,True
+smoking,smoking,80.03,True
+smoking,smoking,72.11,True
+smoking,smoking,76.74,True
+smoking,smoking,99.75,True
+smoking,smoking,80.85,True
+smoking,smoking,80.56,True
+smoking,smoking,98.38,True
+smoking,smoking,86.25,True
+smoking,smoking,92.31,True
+smoking,smoking,99.16,True
+smoking,smoking,99.48,True
+smoking,smoking,87.39,True
+smoking,smoking,89.94,True
+smoking,smoking,99.14,True
+smoking,smoking,91.07,True
+smoking,smoking,94.18,True
+smoking,smoking,93.06,True
+smoking,smoking,89.86,True
+smoking,smoking,78.94,True
+smoking,smoking,98.94,True
+smoking,smoking,82.4,True
+smoking,smoking,86.92,True
+smoking,smoking,90.68,True
+smoking,smoking,98.37,True
+smoking,smoking,98.32,True
+smoking,smoking,89.04,True
+smoking,smoking,89.74,True
+smoking,smoking,94.28,True
+smoking,smoking,96.6,True
+smoking,smoking,96.98,True
+smoking,smoking,90.55,True
+smoking,smoking,99.27,True
+smoking,smoking,86.18,True
+smoking,smoking,97.46,True
+smoking,smoking,79.06,True
+smoking,smoking,78.02,True
+smoking,smoking,73.04,True
+smoking,smoking,92.86,True
+smoking,smoking,95.46,True
+smoking,smoking,97.49,True
+smoking,smoking,99.98,True
+smoking,smoking,78.61,True
+smoking,smoking,74.71,True
+smoking,smoking,89.5,True
+smoking,smoking,92.76,True
+smoking,smoking,90.01,True
+smoking,smoking,96.54,True
+smoking,smoking,97.27,True
+smoking,smoking,90.99,True
+smoking,smoking,98.2,True
+smoking,smoking,97.21,True
+smoking,smoking,99.95,True
+smoking,smoking,99.5,True
+smoking,smoking,75.24,True
+smoking,smoking,87.16,True
+smoking,smoking,92.13,True
+smoking,smoking,95.79,True
+smoking,smoking,89.84,True
+smoking,smoking,75.83,True
+smoking,smoking,89.88,True
+smoking,smoking,95.17,True
+smoking,smoking,73.04,True
+smoking,smoking,93.6,True
+smoking,smoking,73.6,True
+smoking,smoking,90.63,True
+smoking,smoking,90.64,True
+smoking,smoking,80.92,True
+smoking,smoking,86.95,True
+smoking,smoking,98.95,True
+smoking,smoking,89.04,True
+trimming or shaving beard,trimming or shaving beard,83.56,True
+trimming or shaving beard,trimming or shaving beard,94.23,True
+trimming or shaving beard,trimming or shaving beard,99.85,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,99.99,True
+trimming or shaving beard,trimming or shaving beard,99.19,True
+trimming or shaving beard,trimming or shaving beard,93.7,True
+trimming or shaving beard,trimming or shaving beard,92.35,True
+trimming or shaving beard,trimming or shaving beard,99.93,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,99.89,True
+trimming or shaving beard,trimming or shaving beard,99.85,True
+trimming or shaving beard,trimming or shaving beard,99.86,True
+trimming or shaving beard,trimming or shaving beard,99.94,True
+trimming or shaving beard,trimming or shaving beard,99.65,True
+trimming or shaving beard,trimming or shaving beard,91.91,True
+trimming or shaving beard,trimming or shaving beard,99.93,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,71.53,True
+trimming or shaving beard,trimming or shaving beard,99.89,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,98.99,True
+trimming or shaving beard,trimming or shaving beard,83.96,True
+trimming or shaving beard,trimming or shaving beard,92.35,True
+trimming or shaving beard,trimming or shaving beard,90.52,True
+trimming or shaving beard,trimming or shaving beard,99.33,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,93.46,True
+trimming or shaving beard,trimming or shaving beard,99.55,True
+trimming or shaving beard,trimming or shaving beard,94.23,True
+trimming or shaving beard,trimming or shaving beard,95.4,True
+trimming or shaving beard,trimming or shaving beard,99.94,True
+trimming or shaving beard,trimming or shaving beard,98.73,True
+trimming or shaving beard,trimming or shaving beard,99.33,True
+trimming or shaving beard,trimming or shaving beard,99.15,True
+trimming or shaving beard,trimming or shaving beard,99.85,True
+trimming or shaving beard,trimming or shaving beard,90.52,True
+trimming or shaving beard,trimming or shaving beard,91.91,True
+trimming or shaving beard,trimming or shaving beard,99.99,True
+trimming or shaving beard,trimming or shaving beard,99.86,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,98.99,True
+trimming or shaving beard,trimming or shaving beard,98.99,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,83.56,True
+trimming or shaving beard,trimming or shaving beard,83.56,True
+trimming or shaving beard,trimming or shaving beard,93.55,True
+trimming or shaving beard,trimming or shaving beard,99.61,True
+trimming or shaving beard,trimming or shaving beard,99.65,True
+trimming or shaving beard,trimming or shaving beard,99.55,True
+trimming or shaving beard,trimming or shaving beard,97.96,True
+trimming or shaving beard,trimming or shaving beard,99.65,True
+trimming or shaving beard,trimming or shaving beard,93.46,True
+trimming or shaving beard,trimming or shaving beard,83.96,True
+trimming or shaving beard,trimming or shaving beard,71.53,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,99.99,True
+trimming or shaving beard,trimming or shaving beard,99.15,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,97.96,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,99.93,True
+trimming or shaving beard,trimming or shaving beard,99.19,True
+trimming or shaving beard,trimming or shaving beard,99.97,True
+trimming or shaving beard,trimming or shaving beard,99.74,True
+trimming or shaving beard,trimming or shaving beard,95.4,True
+trimming or shaving beard,trimming or shaving beard,99.89,True
+trimming or shaving beard,trimming or shaving beard,93.55,True
+trimming or shaving beard,trimming or shaving beard,99.74,True
+trimming or shaving beard,trimming or shaving beard,93.7,True
+trimming or shaving beard,trimming or shaving beard,100.0,True
+trimming or shaving beard,trimming or shaving beard,99.61,True
+trimming or shaving beard,trimming or shaving beard,98.73,True
+tying knot (not on a tie),tying knot (not on a tie),90.71,True
+tying knot (not on a tie),tying knot (not on a tie),86.59,True
+tying knot (not on a tie),tying knot (not on a tie),78.73,True
+tying knot (not on a tie),tying knot (not on a tie),99.0,True
+tying knot (not on a tie),tying knot (not on a tie),86.72,True
+tying knot (not on a tie),tying knot (not on a tie),89.04,True
+tying knot (not on a tie),tying knot (not on a tie),94.63,True
+tying knot (not on a tie),tying knot (not on a tie),88.91,True
+tying knot (not on a tie),tying knot (not on a tie),88.88,True
+tying knot (not on a tie),tying knot (not on a tie),90.71,True
+tying knot (not on a tie),tying knot (not on a tie),91.38,True
+tying knot (not on a tie),tying knot (not on a tie),88.06,True
+tying knot (not on a tie),tying knot (not on a tie),90.02,True
+tying knot (not on a tie),tying knot (not on a tie),77.03,True
+tying knot (not on a tie),tying knot (not on a tie),81.98,True
+tying knot (not on a tie),tying knot (not on a tie),80.77,True
+tying knot (not on a tie),tying knot (not on a tie),72.67,True
+tying knot (not on a tie),tying knot (not on a tie),86.44,True
+tying knot (not on a tie),tying knot (not on a tie),91.95,True
+tying knot (not on a tie),tying knot (not on a tie),73.93,True
+tying knot (not on a tie),tying knot (not on a tie),81.44,True
+tying knot (not on a tie),tying knot (not on a tie),93.89,True
+tying knot (not on a tie),tying knot (not on a tie),71.88,True
+tying knot (not on a tie),tying knot (not on a tie),85.17,True
+tying knot (not on a tie),tying knot (not on a tie),76.96,True
+tying knot (not on a tie),tying knot (not on a tie),83.56,True
+tying knot (not on a tie),tying knot (not on a tie),76.45,True
+tying knot (not on a tie),tying knot (not on a tie),75.63,True
+tying knot (not on a tie),tying knot (not on a tie),84.68,True
+tying knot (not on a tie),tying knot (not on a tie),76.74,True
+tying knot (not on a tie),tying knot (not on a tie),69.84,True
+tying knot (not on a tie),tying knot (not on a tie),78.64,True
+tying knot (not on a tie),tying knot (not on a tie),96.58,True
+tying knot (not on a tie),tying knot (not on a tie),77.38,True
+tying knot (not on a tie),tying knot (not on a tie),87.12,True
+tying knot (not on a tie),tying knot (not on a tie),85.61,True
+tying knot (not on a tie),tying knot (not on a tie),98.47,True
+tying knot (not on a tie),tying knot (not on a tie),87.79,True
+tying knot (not on a tie),tying knot (not on a tie),93.27,True
+tying knot (not on a tie),tying knot (not on a tie),84.11,True
+tying knot (not on a tie),tying knot (not on a tie),79.12,True
+tying knot (not on a tie),tying knot (not on a tie),97.12,True
+tying knot (not on a tie),tying knot (not on a tie),80.48,True
+tying knot (not on a tie),tying knot (not on a tie),85.36,True
+tying knot (not on a tie),tying knot (not on a tie),74.59,True
+tying knot (not on a tie),tying knot (not on a tie),84.79,True
+tying knot (not on a tie),tying knot (not on a tie),72.19,True
+tying knot (not on a tie),tying knot (not on a tie),89.91,True
+tying knot (not on a tie),tying knot (not on a tie),76.27,True
+tying knot (not on a tie),tying knot (not on a tie),90.29,True
+tying knot (not on a tie),tying knot (not on a tie),73.81,True
+tying knot (not on a tie),tying knot (not on a tie),67.51,True
+tying knot (not on a tie),tying knot (not on a tie),75.94,True
+tying knot (not on a tie),tying knot (not on a tie),97.31,True
+tying knot (not on a tie),tying knot (not on a tie),92.48,True
+tying knot (not on a tie),tying knot (not on a tie),70.42,True
+tying knot (not on a tie),tying knot (not on a tie),96.11,True
+tying knot (not on a tie),tying knot (not on a tie),92.47,True
+tying knot (not on a tie),tying knot (not on a tie),79.61,True
+tying knot (not on a tie),tying knot (not on a tie),70.93,True
+tying knot (not on a tie),tying knot (not on a tie),71.65,True
+tying knot (not on a tie),tying knot (not on a tie),83.26,True
+tying knot (not on a tie),tying knot (not on a tie),79.86,True
+tying knot (not on a tie),tying knot (not on a tie),95.03,True
+tying knot (not on a tie),tying knot (not on a tie),78.29,True
+tying knot (not on a tie),tying knot (not on a tie),89.24,True
+tying knot (not on a tie),tying knot (not on a tie),82.89,True
+tying knot (not on a tie),tying knot (not on a tie),69.25,True
+tying knot (not on a tie),tying knot (not on a tie),89.4,True
+tying knot (not on a tie),tying knot (not on a tie),89.67,True
+tying knot (not on a tie),tying knot (not on a tie),82.34,True
+tying knot (not on a tie),tying knot (not on a tie),94.15,True
+tying knot (not on a tie),tying knot (not on a tie),93.02,True
+tying knot (not on a tie),tying knot (not on a tie),93.75,True
+tying knot (not on a tie),tying knot (not on a tie),73.25,True
+using computer,using computer,93.33,True
+using computer,using computer,83.13,True
+using computer,using computer,86.07,True
+using computer,using computer,82.8,True
+using computer,using computer,97.79,True
+using computer,using computer,92.24,True
+using computer,using computer,88.23,True
+using computer,using computer,87.9,True
+using computer,using computer,99.78,True
+using computer,using computer,99.69,True
+using computer,using computer,89.33,True
+using computer,using computer,85.72,True
+using computer,using computer,93.71,True
+using computer,using computer,75.74,True
+using computer,using computer,97.84,True
+using computer,using computer,80.22,True
+using computer,using computer,90.68,True
+using computer,using computer,90.48,True
+using computer,using computer,98.93,True
+using computer,using computer,99.85,True
+using computer,using computer,86.26,True
+using computer,using computer,90.06,True
+using computer,using computer,81.98,True
+using computer,using computer,82.44,True
+using computer,using computer,88.03,True
+using computer,using computer,89.09,True
+using computer,using computer,86.07,True
+using computer,using computer,97.85,True
+using computer,using computer,89.09,True
+using computer,using computer,77.3,True
+using computer,using computer,97.29,True
+using computer,using computer,96.84,True
+using computer,using computer,76.2,True
+using computer,using computer,91.76,True
+using computer,using computer,75.13,True
+using computer,using computer,98.03,True
+using computer,using computer,72.47,True
+using computer,using computer,97.77,True
+using computer,using computer,91.11,True
+using computer,using computer,80.19,True
+using computer,using computer,83.87,True
+using computer,using computer,90.29,True
+using computer,using computer,99.77,True
+using computer,using computer,97.84,True
+using computer,using computer,81.83,True
+using computer,using computer,99.81,True
+using computer,using computer,94.31,True
+using computer,using computer,87.02,True
+using computer,using computer,78.36,True
+using computer,using computer,84.37,True
+using computer,using computer,77.43,True
+using computer,using computer,81.42,True
+using computer,using computer,79.28,True
+using computer,using computer,89.71,True
+using computer,using computer,87.39,True
+using computer,using computer,92.23,True
+using computer,using computer,99.91,True
+using computer,using computer,97.21,True
+using computer,using computer,90.29,True
+using computer,using computer,94.16,True
+using computer,using computer,99.52,True
+using computer,using computer,94.44,True
+using computer,using computer,99.78,True
+using computer,using computer,95.43,True
+using computer,using computer,91.41,True
+using computer,using computer,83.86,True
+using computer,using computer,99.24,True
+using computer,using computer,77.63,True
+using computer,using computer,95.04,True
+using computer,using computer,76.01,True
+using computer,using computer,73.09,True
+using computer,using computer,87.9,True
+using computer,using computer,99.62,True
+using computer,using computer,87.25,True
+using computer,using computer,94.34,True
+writing or painting/drawing,writing or painting/drawing,99.75,True
+writing or painting/drawing,writing or painting/drawing,94.81,True
+writing or painting/drawing,writing or painting/drawing,96.97,True
+writing or painting/drawing,writing or painting/drawing,99.99,True
+writing or painting/drawing,writing or painting/drawing,93.38,True
+writing or painting/drawing,writing or painting/drawing,82.23,True
+writing or painting/drawing,writing or painting/drawing,99.83,True
+writing or painting/drawing,writing or painting/drawing,99.88,True
+writing or painting/drawing,writing or painting/drawing,88.92,True
+writing or painting/drawing,writing or painting/drawing,98.73,True
+writing or painting/drawing,writing or painting/drawing,97.49,True
+writing or painting/drawing,writing or painting/drawing,98.6,True
+writing or painting/drawing,writing or painting/drawing,97.23,True
+writing or painting/drawing,writing or painting/drawing,99.26,True
+writing or painting/drawing,writing or painting/drawing,99.48,True
+writing or painting/drawing,writing or painting/drawing,98.64,True
+writing or painting/drawing,writing or painting/drawing,99.69,True
+writing or painting/drawing,writing or painting/drawing,94.68,True
+writing or painting/drawing,writing or painting/drawing,97.62,True
+writing or painting/drawing,writing or painting/drawing,91.35,True
+writing or painting/drawing,writing or painting/drawing,92.14,True
+writing or painting/drawing,writing or painting/drawing,89.21,True
+writing or painting/drawing,writing or painting/drawing,99.48,True
+writing or painting/drawing,writing or painting/drawing,89.83,True
+writing or painting/drawing,writing or painting/drawing,75.95,True
+writing or painting/drawing,writing or painting/drawing,98.49,True
+writing or painting/drawing,writing or painting/drawing,99.63,True
+writing or painting/drawing,writing or painting/drawing,98.64,True
+writing or painting/drawing,writing or painting/drawing,73.1,True
+writing or painting/drawing,tapping pen,71.14,False
+writing or painting/drawing,writing or painting/drawing,91.17,True
+writing or painting/drawing,writing or painting/drawing,98.93,True
+writing or painting/drawing,writing or painting/drawing,92.5,True
+writing or painting/drawing,writing or painting/drawing,90.3,True
+writing or painting/drawing,writing or painting/drawing,96.27,True
+writing or painting/drawing,tapping pen,79.56,False
+writing or painting/drawing,writing or painting/drawing,93.68,True
+writing or painting/drawing,writing or painting/drawing,89.48,True
+writing or painting/drawing,writing or painting/drawing,74.59,True
+writing or painting/drawing,writing or painting/drawing,98.81,True
+writing or painting/drawing,writing or painting/drawing,98.31,True
+writing or painting/drawing,writing or painting/drawing,99.28,True
+writing or painting/drawing,writing or painting/drawing,85.63,True
+writing or painting/drawing,writing or painting/drawing,99.43,True
+writing or painting/drawing,writing or painting/drawing,96.19,True
+writing or painting/drawing,writing or painting/drawing,75.89,True
+writing or painting/drawing,writing or painting/drawing,87.2,True
+writing or painting/drawing,writing or painting/drawing,78.12,True
+writing or painting/drawing,writing or painting/drawing,93.27,True
+writing or painting/drawing,writing or painting/drawing,94.04,True
+writing or painting/drawing,writing or painting/drawing,99.54,True
+writing or painting/drawing,writing or painting/drawing,90.05,True
+writing or painting/drawing,writing or painting/drawing,99.81,True
+writing or painting/drawing,writing or painting/drawing,90.42,True
+writing or painting/drawing,writing or painting/drawing,70.98,True
+writing or painting/drawing,writing or painting/drawing,92.21,True
+writing or painting/drawing,writing or painting/drawing,82.47,True
+writing or painting/drawing,writing or painting/drawing,82.48,True
+writing or painting/drawing,writing or painting/drawing,76.03,True
+writing or painting/drawing,writing or painting/drawing,99.79,True
+writing or painting/drawing,writing or painting/drawing,97.44,True
+writing or painting/drawing,writing or painting/drawing,98.0,True
+writing or painting/drawing,writing or painting/drawing,94.04,True
+writing or painting/drawing,writing or painting/drawing,92.85,True
+writing or painting/drawing,writing or painting/drawing,99.96,True
+writing or painting/drawing,writing or painting/drawing,98.07,True
+writing or painting/drawing,writing or painting/drawing,89.39,True
+writing or painting/drawing,writing or painting/drawing,95.01,True
+writing or painting/drawing,writing or painting/drawing,96.26,True
+writing or painting/drawing,writing or painting/drawing,98.03,True
+writing or painting/drawing,writing or painting/drawing,86.52,True
+writing or painting/drawing,writing or painting/drawing,97.54,True
+writing or painting/drawing,writing or painting/drawing,99.12,True
+writing or painting/drawing,writing or painting/drawing,75.27,True
+writing or painting/drawing,writing or painting/drawing,98.88,True
